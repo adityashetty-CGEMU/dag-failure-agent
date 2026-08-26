@@ -1,2 +1,2 @@
-GCP_PROJECT: dag-failure-agent-505623
-ALLOWED_DAG_IDS: dag1
+GCP_PROJECT: "dag-failure-agent-cap"
+ALLOWED_DAG_IDS: "dag1"
