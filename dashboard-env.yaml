@@ -1,2 +1,2 @@
-GCP_PROJECT: dag-failure-agent-505623
+GCP_PROJECT: dag-failure-agent-cap
 BQ_DATASET: dag_failure_agent
