@@ -19,7 +19,7 @@ def flag_high_risk(**context):
 
 with DAG("dag4", start_date=datetime(2026, 1, 1), schedule=None, catchup=False) as dag:
     t1 = PythonOperator(task_id="fetch_customer_profile", python_callable=fetch_customer_profile)
-    t2 = PythonOperator(task_id="enrich_with_scores", python_callable=enrich_with_scores)
+    t2 = PythonOperator(task_id="enrich_with_scores_hard", python_callable=enrich_with_scores)
     t3 = PythonOperator(task_id="flag_high_risk", python_callable=flag_high_risk)
     t1 >> t2 >> t3
 
